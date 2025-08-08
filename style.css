@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  background: #111;
+  background: url('https://i.postimg.cc/3JWm1SCx/vecteezy-paper-texture-white-watercolor-paper-texture-background-1900963.jpg') no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
