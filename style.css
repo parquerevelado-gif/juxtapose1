@@ -88,3 +88,10 @@ body {
 .arrow.right {
   right: -36px; /* a la derecha de la línea */
 }
+
+.before img,
+.after img {
+  user-select: none;       /* No permite seleccionar */
+  -webkit-user-drag: none; /* Evita arrastrar en navegadores WebKit */
+  pointer-events: none;    /* Evita clics sobre la imagen */
+}
