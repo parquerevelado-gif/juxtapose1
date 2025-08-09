@@ -1,11 +1,10 @@
-* {
+* { 
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: url('https://i.postimg.cc/fT3Sm3D3/vecteezy-paper-texture-white-watercolor-paper-texture-background-1900963-edited.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,13 +14,15 @@ body {
 .before-after-container {
   position: relative;
   width: 80%;
-  aspect-ratio: 16/9;
-  overflow: visible;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
   cursor: ew-resize;
-  
+  background: none; /* sin fondo */
 }
 
-.before, .after {
+.before,
+.after {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,10 +30,14 @@ body {
   height: 100%;
 }
 
-.before img, .after img {
+.before img,
+.after img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .after {
@@ -72,9 +77,10 @@ body {
   border-radius: 50%;
   padding: 4px;
 }
+
 .arrow path {
-  stroke-linecap: round;  /* extremos del trazo redondeados */
-  stroke-linejoin: round; /* vértices redondeados */
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .arrow:hover {
@@ -82,16 +88,9 @@ body {
 }
 
 .arrow.left {
-  left: -36px; /* a la izquierda de la línea */
+  left: -36px;
 }
 
 .arrow.right {
-  right: -36px; /* a la derecha de la línea */
-}
-
-.before img,
-.after img {
-  user-select: none;       /* No permite seleccionar */
-  -webkit-user-drag: none; /* Evita arrastrar en navegadores WebKit */
-  pointer-events: none;    /* Evita clics sobre la imagen */
+  right: -36px;
 }
