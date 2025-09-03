@@ -20,7 +20,7 @@ body {
   cursor: ew-resize;
   background: none; /* sin fondo */
   /* 👇 Sombra alrededor del recuadro completo */
-  border-radius: 14px;           /* opcional, para esquinas suaves */
+  border-radius: 15px;           /* opcional, para esquinas suaves */
   box-shadow: 0 14px 34px rgba(0,0,0,0.35), 0 4px 10px rgba(0,0,0,0.2);
 }
 
